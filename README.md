@@ -1,6 +1,6 @@
 # 🏏 IPL Analytics Platform
 
-> End-to-end data analytics solution for Indian Premier League cricket data using modern data stack technologies.
+## End-to-end data analytics solution for Indian Premier League cricket data using modern data stack technologies.
 
 [![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=flat-square&logo=snowflake&logoColor=white)](https://www.snowflake.com/)
 [![dbt](https://img.shields.io/badge/dbt-FF694B?style=flat-square&logo=dbt&logoColor=white)](https://www.getdbt.com/)
