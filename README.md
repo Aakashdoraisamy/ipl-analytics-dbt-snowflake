@@ -1,23 +1,25 @@
 # 🏏 IPL Analytics Platform
 
-## End-to-end data analytics solution for Indian Premier League cricket data using modern data stack technologies.
+## End-to-end Data Analytics Solution for IPL Cricket Data
 
 [![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=flat-square&logo=snowflake&logoColor=white)](https://www.snowflake.com/)
 [![dbt](https://img.shields.io/badge/dbt-FF694B?style=flat-square&logo=dbt&logoColor=white)](https://www.getdbt.com/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)](https://streamlit.io/)
 [![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-blue?style=flat-square)](https://aakashdoraisamy-ipl-analytics-dbt-snowflak-dashboardsapp-m5wq2s.streamlit.app/)
+
 
 ---
 
 ## 📖 Overview
 
-A production-grade data pipeline that analyzes **13 seasons of IPL cricket** (2008-2020), processing over **179,000 ball-by-ball records** across **756 matches**. The platform demonstrates modern data engineering practices with cloud-native technologies, transforming raw cricket data into actionable insights through interactive dashboards.
+A production-grade data pipeline that analyzes **13 seasons of IPL cricket** (2008–2020), processing over **179,000 ball-by-ball records** across **756 matches**. The platform demonstrates modern data engineering practices with cloud-native technologies, transforming raw cricket data into actionable insights via interactive dashboards.
 
 ### Key Features
-- End-to-end data pipeline with automated transformations
+- End-to-end automated data pipeline
 - Multi-layered architecture (Raw → Staging → Analytics)
-- Interactive dashboard with real-time filtering
-- Comprehensive data quality testing
+- Interactive Streamlit dashboard
+- Comprehensive data quality tests
 - Player and team performance analytics
 
 ---
@@ -26,9 +28,9 @@ A production-grade data pipeline that analyzes **13 seasons of IPL cricket** (20
 
 | Layer | Technology | Purpose |
 |-------|-----------|---------|
-| **Data Warehouse** | Snowflake | Cloud data storage and compute engine |
+| **Data Warehouse** | Snowflake | Cloud storage and compute engine |
 | **Transformations** | dbt | SQL-based data modeling and testing |
-| **Visualization** | Streamlit + Plotly | Interactive dashboard and charts |
+| **Visualization** | Streamlit + Plotly | Interactive dashboards and charts |
 | **Languages** | SQL, Python | Data processing and application logic |
 
 ---
@@ -83,32 +85,31 @@ CSV Files (Source Data)
 ## 📊 Data Models
 
 ### Staging Layer
-- **stg_deliveries**: Cleaned ball-by-ball records with match phases
-- **stg_matches**: Standardized match information
+- **stg_deliveries**: Cleaned ball-by-ball records with match phases  
+- **stg_matches**: Standardized match information  
 
 ### Analytics Layer
-- **fct_batting_performance**: Player batting metrics per match
-- **fct_bowling_performance**: Player bowling metrics per match
-- **fct_team_performance**: Team-level statistics and outcomes
+- **fct_batting_performance**: Player batting metrics per match  
+- **fct_bowling_performance**: Player bowling metrics per match  
+- **fct_team_performance**: Team-level statistics and outcomes  
 
 ---
 
 ## 🎨 Dashboard Features
-
-- **Key Metrics**: Matches, deliveries, players, teams, sixes
-- **Top Performers**: Run scorers and wicket takers with detailed stats
-- **Advanced Analytics**: Phase-wise scoring, batting vs chasing analysis
-- **Team Comparison**: Win percentages, scoring averages
-- **Interactive Filters**: Season selection, dynamic updates
+- **Key Metrics**: Matches, deliveries, players, teams, sixes  
+- **Top Performers**: Run scorers and wicket takers  
+- **Advanced Analytics**: Phase-wise scoring, batting vs chasing analysis  
+- **Team Comparison**: Win percentages, scoring averages  
+- **Interactive Filters**: Season selection, dynamic updates  
 
 ---
 
 ## 💡 Key Insights
 
-- Teams winning toss have 52% match win rate
-- Scoring 50+ in powerplay leads to 65% win rate
-- Death overs economy strongly correlates with outcomes
-- Chasing success rate increased to 60% in recent seasons
+- Teams winning toss have **52% match win rate**  
+- Scoring 50+ in powerplay leads to **65% win rate**  
+- Death overs economy strongly correlates with outcomes  
+- Chasing success rate increased to **60%** in recent seasons  
 
 ---
 
@@ -116,7 +117,7 @@ CSV Files (Source Data)
 
 ### Prerequisites
 - Python 3.8+
-- Snowflake account (free trial available)
+- Snowflake account 
 
 ### Setup
 
