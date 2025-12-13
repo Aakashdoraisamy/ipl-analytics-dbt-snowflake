@@ -13,6 +13,9 @@ env/
 # Streamlit
 # --------------------
 .streamlit/secrets.toml
+.streamlit/secrets.toml
+*.pyc
+__pycache__/
 
 # --------------------
 # dbt
