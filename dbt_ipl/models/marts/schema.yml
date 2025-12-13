@@ -1,0 +1,42 @@
+version: 2
+
+models:
+  - name: fct_batting_performance
+    description: "Batting performance metrics by player and match"
+    columns:
+      - name: match_id
+        tests:
+          - not_null
+      - name: batsman
+        tests:
+          - not_null
+      - name: strike_rate
+        description: "Runs per 100 balls"
+        
+  - name: fct_bowling_performance
+    description: "Bowling performance metrics by player and match"
+    columns:
+      - name: match_id
+        tests:
+          - not_null
+      - name: bowler
+        tests:
+          - not_null
+      - name: economy_rate
+        description: "Runs conceded per over"
+      - name: bowling_strike_rate
+        description: "Balls bowled per wicket taken"
+        
+  - name: fct_team_performance
+    description: "Team-level performance metrics by match"
+    columns:
+      - name: match_id
+        tests:
+          - not_null
+      - name: team_name
+        tests:
+          - not_null
+      - name: won_match
+        description: "1 if team won, 0 if lost"
+      - name: batted_first
+        description: "1 if batted first, 0 if chased"

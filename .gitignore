@@ -1,0 +1,29 @@
+# --------------------
+# Python
+# --------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# --------------------
+# Streamlit
+# --------------------
+.streamlit/secrets.toml
+
+# --------------------
+# dbt
+# --------------------
+target/
+dbt_packages/
+logs/
+
+# --------------------
+# OS & Editor
+# --------------------
+.DS_Store
+Thumbs.db
+.vscode/

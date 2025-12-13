@@ -1,0 +1,78 @@
+version: 2
+
+sources:
+  - name: raw
+    database: IPL_ANALYTICS
+    schema: RAW
+    description: "Raw IPL data loaded from CSV files"
+    
+    tables:
+      - name: deliveries
+        description: "Ball-by-ball delivery data for all IPL matches"
+        columns:
+          - name: match_id
+            description: "Unique identifier for each match"
+            tests:
+              - not_null
+          - name: inning
+            description: "Inning number (1 or 2)"
+          - name: batting_team
+            description: "Team batting in this delivery"
+          - name: bowling_team
+            description: "Team bowling in this delivery"
+          - name: batsman
+            description: "Batsman on strike"
+          - name: bowler
+            description: "Bowler delivering the ball"
+            
+      - name: matches
+        description: "Match-level information including results and venue"
+        columns:
+          - name: id
+            description: "Unique match identifier"
+            tests:
+              - unique
+              - not_null
+          - name: season
+            description: "IPL season year"
+          - name: winner
+            description: "Team that won the match"
+          - name: venue
+            description: "Stadium where match was played"
+      
+      - name: teams
+        description: "List of all IPL teams"
+      
+      - name: teamwise_home_away
+        description: "Team performance at home vs away venues"
+      
+      - name: batting_stats
+        description: "Pre-aggregated batting statistics"
+
+models:
+  - name: stg_deliveries
+    description: "Cleaned and enriched delivery data with match phases"
+    columns:
+      - name: match_id
+        description: "Match identifier"
+        tests:
+          - not_null
+      - name: phase
+        description: "Match phase: Powerplay (0-5), Middle (6-15), Death (16-20)"
+      - name: is_wicket
+        description: "Flag indicating if a wicket fell (1=yes, 0=no)"
+        
+  - name: stg_matches
+    description: "Cleaned match-level data with derived metrics"
+    columns:
+      - name: match_id
+        description: "Unique match identifier"
+        tests:
+          - unique
+          - not_null
+      - name: match_date
+        description: "Date when match was played"
+      - name: toss_winner_won_match
+        description: "Flag: 1 if toss winner won the match, 0 otherwise"
+      - name: win_type
+        description: "Type of win: Batting First Win, Chasing Win, or No Result"
