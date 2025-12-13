@@ -2,11 +2,11 @@
 
 ## End-to-end Data Analytics Solution for IPL Cricket Data
 
-[![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=flat-square&logo=snowflake&logoColor=white)](https://www.snowflake.com/)
-[![dbt](https://img.shields.io/badge/dbt-FF694B?style=flat-square&logo=dbt&logoColor=white)](https://www.getdbt.com/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)](https://streamlit.io/)
-[![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-blue?style=flat-square)](https://aakashdoraisamy-ipl-analytics-dbt-snowflak-dashboardsapp-m5wq2s.streamlit.app/)
+[![Snowflake](https://img.shields.io/badge/Snowflake-29B5E8?style=for-the-badge&logo=snowflake&logoColor=white&logoWidth=40)](https://www.snowflake.com/)
+[![dbt](https://img.shields.io/badge/dbt-FF694B?style=for-the-badge&logo=dbt&logoColor=white&logoWidth=40)](https://www.getdbt.com/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white&logoWidth=40)](https://streamlit.io/)
+[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white&logoWidth=40)](https://www.python.org/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-blue?style=for-the-badge&logo=streamlit&logoColor=white&logoWidth=40)](https://aakashdoraisamy-ipl-analytics-dbt-snowflak-dashboardsapp-m5wq2s.streamlit.app/)
 
 
 ---
