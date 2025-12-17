@@ -45,15 +45,15 @@ CSV Files (Source Data)
 ┌─────────────────────────────────────┐
 │      SNOWFLAKE DATA WAREHOUSE       │
 │                                     │
-│  RAW LAYER (5 tables)              │
+│  RAW LAYER (5 tables)               │
 │  • Direct data ingestion            │
 │  • No transformations               │
 │         ↓                           │
-│  STAGING LAYER (dbt)               │
+│  STAGING LAYER (dbt)                │
 │  • Data cleaning                    │
 │  • Standardization                  │
 │         ↓                           │
-│  ANALYTICS LAYER (dbt)             │
+│  ANALYTICS LAYER (dbt)              │
 │  • Business logic                   │
 │  • Aggregated metrics               │
 │                                     │
@@ -68,10 +68,10 @@ CSV Files (Source Data)
 ### Technology Integration
 
 ```
-┌──────────┐    ┌──────────┐    ┌──────────┐
+┌──────────┐    ┌──────────┐     ┌──────────┐
 │   CSV    │───▶│Snowflake │◀───│   dbt    │
-│  Files   │    │          │    │Transform │
-└──────────┘    └─────┬────┘    └──────────┘
+│  Files   │    │          │     │Transform │
+└──────────┘    └─────┬────┘     └──────────┘
                       │
                       ▼
                 ┌──────────┐
