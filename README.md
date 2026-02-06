@@ -35,53 +35,6 @@ A production-grade data pipeline that analyzes **13 seasons of IPL cricket** (20
 
 ---
 
-## 🏗 Architecture
-
-### Data Flow
-
-```
-CSV Files (Source Data)
-        ↓
-┌─────────────────────────────────────┐
-│      SNOWFLAKE DATA WAREHOUSE       │
-│                                     │
-│  RAW LAYER (5 tables)               │
-│  • Direct data ingestion            │
-│  • No transformations               │
-│         ↓                           │
-│  STAGING LAYER (dbt)                │
-│  • Data cleaning                    │
-│  • Standardization                  │
-│         ↓                           │
-│  ANALYTICS LAYER (dbt)              │
-│  • Business logic                   │
-│  • Aggregated metrics               │
-│                                     │
-└─────────────────┬───────────────────┘
-                  ↓
-        STREAMLIT DASHBOARD
-        • Interactive filters
-        • Visualizations
-        • Real-time analytics
-```
-
-### Technology Integration
-
-```
-┌──────────┐    ┌──────────┐     ┌──────────┐
-│   CSV    │───▶│Snowflake │◀───│   dbt    │
-│  Files   │    │          │     │Transform │
-└──────────┘    └─────┬────┘     └──────────┘
-                      │
-                      ▼
-                ┌──────────┐
-                │Streamlit │
-                │Dashboard │
-                └──────────┘
-```
-
----
-
 ## 📊 Data Models
 
 ### Staging Layer
